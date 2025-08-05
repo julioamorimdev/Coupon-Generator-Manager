@@ -1,8 +1,10 @@
-  body {
+  /* General body margin reset */
+body {
     margin: 0px;
-   }
+}
 
-  .container {
+/* Container for centering content */
+.container {
     width: 100vw;
     height: 100vh;
     background: #740606;
@@ -10,40 +12,45 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    }
-    
-    .box {
+}
+
+/* Login box styling */
+.box {
     width: 30%;
     height: 50%;
     background: #fff;
     /* border:solid 1px; */
-    border-radius:20px;
+    border-radius: 20px;
     text-align: center;
     margin: 0 auto;
-    }
+}
 
-    .boxsucess {
-      width: 500px;
-      height: 100px;
-      background: #fff;
-      border:solid 1px;
-      border-radius:20px;
-      text-align: center;
-      margin: 0 auto;
-      }
+/* Success message box styling */
+.boxsucess {
+    width: 500px;
+    height: 100px;
+    background: #fff;
+    border: solid 1px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
 
-      @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-*{
+/* Reset margin and padding for all elements */
+* {
     margin: 0px;
     padding: 0px;
 }
 
+/* Set default font for body */
 body {
     font-family: 'Exo', sans-serif;
 }
 
-
+/* Context section styling */
 .context {
     width: 100%;
     position: absolute;
@@ -55,14 +62,15 @@ body {
     font-size: 50px;
 }
 
-
+/* Area background with gradient */
 .area {
-    background: #e20613;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    background: #e20613;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
     width: 100%;
-    height:100vh;
+    height: 100vh;
 }
 
+/* Circles animation container */
 .circles {
     position: absolute;
     top: 0;
@@ -72,6 +80,7 @@ body {
     overflow: hidden;
 }
 
+/* Circles animation base style */
 .circles li {
     position: absolute;
     display: block;
@@ -81,16 +90,15 @@ body {
     background: rgba(255, 255, 255, 0.2);
     animation: animate 5s linear infinite;
     bottom: -150px;
-    
 }
 
+/* Individual circle animations */
 .circles li:nth-child(1) {
     left: 25%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
 }
-
 
 .circles li:nth-child(2) {
     left: 10%;
@@ -160,18 +168,16 @@ body {
     animation-duration: 11s;
 }
 
-
-
+/* Keyframes for circle animation */
 @keyframes animate {
-   0%{
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
-      border-radius: 0;
-   }
-
-   100%{
-      transform: translateY(-1000px) rotate(720deg);
-      opacity: 0;
-      border-radius: 50%;
-   }
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
 }
